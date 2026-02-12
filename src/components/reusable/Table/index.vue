@@ -1,29 +1,35 @@
 <template>
   <div :class="['overflow-x-auto', additionalClass]">
-    <table class="table min-w-full">
-      <thead>
-        <tr>
-          <th v-for="(h, idx) in headers" :key="idx" class="text-left p-2">
-            {{ h }}
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="(row, rIdx) in rows" :key="rIdx" class="hover:bg-gray-800">
-          <td v-for="(h, cIdx) in headers" :key="cIdx" class="p-2">
-            {{ row[h] ?? '' }}
-          </td>
-        </tr>
-        <tr v-if="rows.length === 0">
-          <td
-            :colspan="headers.length"
-            class="p-4 text-center text-sm text-gray-500"
+    <div class="overflow-x-auto border border-base-content/5 bg-base-100">
+      <table class="table min-w-full">
+        <thead>
+          <tr>
+            <th v-for="(h, idx) in headers" :key="idx" class="text-center p-2">
+              {{ h }}
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            v-for="(row, rIdx) in rows"
+            :key="rIdx"
+            class="hover:hover:bg-base-300"
           >
-            No data
-          </td>
-        </tr>
-      </tbody>
-    </table>
+            <td v-for="(h, cIdx) in headers" :key="cIdx" class="p-3">
+              {{ row[h] ?? '' }}
+            </td>
+          </tr>
+          <tr v-if="rows.length === 0">
+            <td
+              :colspan="headers.length"
+              class="p-4 text-center text-sm text-gray-500"
+            >
+              No data
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </template>
 
