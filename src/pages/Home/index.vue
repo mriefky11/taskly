@@ -19,9 +19,9 @@
   </div>
 </template>
 <script setup>
-import {formatDateTime} from '@/helper/DateHelper';
+import {formatDateDay} from '@/helper/DateHelper';
 
-const date = formatDateTime(new Date());
+const date = formatDateDay(new Date());
 
 const data = [
   {

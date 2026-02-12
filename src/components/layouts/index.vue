@@ -113,7 +113,16 @@
 
 <script setup>
 import {ref, onMounted} from 'vue';
-import {Menu, House, Settings, ListTodo, Moon, Sun} from 'lucide-vue-next';
+import {
+  Menu,
+  House,
+  Settings,
+  ListTodo,
+  Moon,
+  Sun,
+  FolderOpenDot,
+  SquareKanban,
+} from 'lucide-vue-next';
 import {useRoute} from 'vue-router';
 import {computed} from 'vue';
 import Footer from '@/components/layouts/Footer/index.vue';
@@ -129,7 +138,9 @@ const isDarkMode = ref(false);
 
 const menus = [
   {to: '/', label: 'Homepage', icon: House},
+  {to: '/project', label: 'Project', icon: FolderOpenDot},
   {to: '/tasks', label: 'Tasks', icon: ListTodo},
+  {to: '/kanban', label: 'Kanban', icon: SquareKanban},
   {to: '/settings', label: 'Settings', icon: Settings},
 ];
 

@@ -6,7 +6,7 @@ export function formatDate(date, dateFormat = 'dd MMMM yyyy') {
   return format(new Date(date), dateFormat, {locale: id});
 }
 
-export function formatDateTime(date, dateFormat = 'dd MMMM yyyy HH:mm') {
+export function formatDateDay(date, dateFormat = 'cccc, dd MMMM yyyy') {
   if (!date) return '';
   return format(new Date(date), dateFormat, {locale: id});
 }

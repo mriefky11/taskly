@@ -1,4 +1,4 @@
-import * as component from '../components';
+import * as component from './components';
 
 export const settingsRoutes = [
   {

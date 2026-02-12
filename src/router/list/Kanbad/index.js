@@ -1,15 +1,15 @@
 import * as component from './components';
 
-export const taskRoutes = [
+export const kanbadRoutes = [
   {
-    path: '/tasks',
-    name: 'TaskList',
-    component: component.TaskList,
+    path: '/kanban',
+    name: 'KanbanBoard',
+    component: component.KanbanBoard,
     meta: {
       layout: 'MainLayout',
       breadcrumbs: [
         {key: 'Homepage', label: 'Home', to: '/'},
-        {key: 'Tasks', label: 'Tasks', to: '/tasks'},
+        {key: 'Kanban', label: 'Kanban', to: '/kanban'},
       ],
     },
   },

@@ -1,15 +1,15 @@
 import * as component from './components';
 
-export const taskRoutes = [
+export const projectRoutes = [
   {
-    path: '/tasks',
-    name: 'TaskList',
-    component: component.TaskList,
+    path: '/project',
+    name: 'ProjectList',
+    component: component.ProjectList,
     meta: {
       layout: 'MainLayout',
       breadcrumbs: [
         {key: 'Homepage', label: 'Home', to: '/'},
-        {key: 'Tasks', label: 'Tasks', to: '/tasks'},
+        {key: 'Project', label: 'Project', to: '/project'},
       ],
     },
   },
