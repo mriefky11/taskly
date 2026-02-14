@@ -2,7 +2,7 @@ import TextInput from '@/components/form/TextInput/index.vue';
 import TextArea from '@/components/form/TextArea/index.vue';
 import Select from '@/components/form/Select/index.vue';
 import DatePicker from '@/components/form/DatePicker/index.vue';
-import Button from '@/components/reusable/button/index.vue';
+import Button from '@/components/reusable/Button/index.vue';
 import Alert from '@/components/reusable/Alert/index.vue';
 import Toast from '@/components/reusable/Toast/index.vue';
 import Card from '@/components/reusable/Card/index.vue';
