@@ -19,7 +19,7 @@
   </div>
 </template>
 <script setup>
-import {formatDateDay} from '@/helper/DateHelper';
+import {formatDateDay} from '@/helper/dateHelper.js';
 
 const date = formatDateDay(new Date());
 
