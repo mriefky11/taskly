@@ -122,6 +122,7 @@ import {
   Sun,
   FolderOpenDot,
   SquareKanban,
+  ClipboardList,
 } from 'lucide-vue-next';
 import {useRoute} from 'vue-router';
 import {computed} from 'vue';
@@ -139,8 +140,9 @@ const isDarkMode = ref(false);
 const menus = [
   {to: '/', label: 'Homepage', icon: House},
   {to: '/project', label: 'Project', icon: FolderOpenDot},
-  {to: '/tasks', label: 'Tasks', icon: ListTodo},
+  {to: '/tasks', label: 'Tasks', icon: ClipboardList},
   {to: '/kanban', label: 'Kanban', icon: SquareKanban},
+  {to: '/backlog', label: 'Backlog', icon: ListTodo},
   {to: '/settings', label: 'Settings', icon: Settings},
 ];
 

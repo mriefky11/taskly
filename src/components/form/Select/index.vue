@@ -4,7 +4,7 @@
   </label>
   <select
     :value="modelValue !== '' ? modelValue : (options?.[0]?.[keyField] ?? '')"
-    class="select"
+    class="select w-full"
     :class="[additionalClass, disabled ? 'disabled-select' : '']"
     :disabled="disabled"
     @change="(e) => setValue(e.target.value)"

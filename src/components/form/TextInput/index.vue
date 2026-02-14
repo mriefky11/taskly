@@ -6,7 +6,7 @@
       :type="type"
       :value="modelValue"
       :maxlength="maxlength"
-      class="input input-bordered"
+      class="input input-bordered w-full"
       :class="inputClass"
       :placeholder="placeholder"
       :disabled="isDisabled"
@@ -16,7 +16,7 @@
     <slot name="additional-message">
       <p class="fieldset-label">{{ additionalMessage }}</p>
     </slot>
-    <p class="text-error">{{ errorMessage }}</p>
+    <p class="text-error">{{ errorMessages }}</p>
   </fieldset>
 </template>
 

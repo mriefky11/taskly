@@ -46,7 +46,7 @@ const data = [
     id: 4,
     label: 'Todo',
     total: 3,
-    color: 'border-l-10 border-l-white text-white',
+    color: 'border-l-10 border-l-gray text-gray',
   },
 ];
 </script>

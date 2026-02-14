@@ -8,9 +8,9 @@
       :value="modelValue"
       :placeholder="placeholder"
       :disabled="disabled"
-      class="input mt-1"
+      class="input mt-1 w-full"
       :class="[additionalClass, disabled ? 'disabled-input' : '']"
-      @change="(e) => updateDate(e.target.value)"
+      @input="onInput"
     />
     <small class="text-error">{{ errorMessage }}</small>
   </div>
@@ -44,10 +44,9 @@ const props = defineProps({
   },
 });
 
-const emit = defineEmits(['update:modelValue', 'handle-change']);
+const emit = defineEmits(['update:modelValue'])
 
-const updateDate = (value) => {
-  emit('update:modelValue', value);
-  emit('handle-change');
-};
+function onInput(e) {
+  emit('update:modelValue', e.target.value)
+}
 </script>

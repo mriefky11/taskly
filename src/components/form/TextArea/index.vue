@@ -5,12 +5,12 @@
       :id="name"
       :name="name"
       :value="modelValue"
-      class="textarea"
+      class="textarea w-full"
       :class="additionalClass"
       :placeholder="placeholder"
       @input="setValue($event.target.value)"
     ></textarea>
-    <small class="text-error">{{ errorMessage }}</small>
+    <small class="text-error">{{ errorMessages }}</small>
   </fieldset>
 </template>
 
@@ -28,10 +28,6 @@ defineProps({
     type: String,
     required: true,
   },
-  value: {
-    type: String,
-    required: true,
-  },
   additionalMessage: {
     type: String,
     required: false,
@@ -39,6 +35,10 @@ defineProps({
   errorMessages: {
     type: String,
     required: false,
+  },
+  modelValue: {
+    type: String,
+    default: '',
   },
 });
 

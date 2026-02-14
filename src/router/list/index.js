@@ -3,6 +3,7 @@ import {taskRoutes} from './Task';
 import {settingsRoutes} from './Settings';
 import {projectRoutes} from './Project';
 import {kanbadRoutes} from './Kanbad';
+import {backlogRoutes} from './Backlog';
 
 export const routes = [
   {
@@ -19,4 +20,5 @@ export const routes = [
   ...settingsRoutes,
   ...projectRoutes,
   ...kanbadRoutes,
+  ...backlogRoutes,
 ];
